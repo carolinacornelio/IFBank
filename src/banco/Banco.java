@@ -30,6 +30,28 @@ public class Banco{
     }
   }
 
+  /* Testar com o switch
+  public String retirarFicha(int tipo){
+	    switch (tipo){
+	        case 1: // preferencial
+	            ultimoPreferencial++;
+                String ficha = "P-" + ultimoPreferencial;
+                filaPreferencial.add(ficha);
+                return "\nFicha preferencial retirada: " + ficha;
+                break;
+            case 2: // comum
+                ultimoPreferencial++;
+                String ficha = "P-" + ultimoPreferencial;
+                filaPreferencial.add(ficha);
+                return "\nFicha preferencial retirada: " + ficha;
+                break;
+            default:
+                return "Tipo de ficha inválido! Tente novamente.";
+                break;
+	    }
+  }
+  */
+
   public String chamarProximo(){
     if (filaPreferencial.isEmpty() && filaComum.isEmpty()) {
       return "Nenhuma ficha para chamar.";
