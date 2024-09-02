@@ -17,19 +17,16 @@ public class Banco{
    switch (tipo){
 	case 1: // preferencial
 	    ultimoPreferencial++;
-	    String ficha = "P-" + ultimoPreferencial;
-	    filaPreferencial.add(ficha);
-	    return "\nFicha preferencial retirada: " + ficha;
-	    break;
+	    String fichaP = "P-" + ultimoPreferencial;
+	    filaPreferencial.add(fichaP);
+	    return "\nFicha preferencial retirada: " + fichaP;
 	case 2: // comum
 	    ultimoComum++;
-	    String ficha = "C-" + ultimoComum;
-	    filaComum.add(ficha);
-            return "\nFicha comum retirada: " + ficha;
-	    break;
+	    String fichaC = "C-" + ultimoComum;
+	    filaComum.add(fichaC);
+            return "\nFicha comum retirada: " + fichaC;
 	default:
 	    return "Tipo de ficha inválido! Tente novamente.";
-	    break;
     }
 }
 
