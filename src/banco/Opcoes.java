@@ -40,8 +40,8 @@ public class Opcoes extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel retirar = new JLabel("");
-		retirar.addMouseListener(new MouseAdapter() {
+		JLabel preferencial = new JLabel("");
+		preferencial.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				//banco = Inicial.ifbank
@@ -49,21 +49,21 @@ public class Opcoes extends JFrame {
 				JOptionPane.showMessageDialog(null, ficha);
 			}
 		});
-		retirar.setIcon(new ImageIcon(Opcoes.class.getResource("/img/pref - bnt.png")));
-		retirar.setBounds(467, 438, 260, 64);
-		contentPane.add(retirar);
+		preferencial.setIcon(new ImageIcon(Opcoes.class.getResource("/img/pref - bnt.png")));
+		preferencial.setBounds(467, 438, 260, 64);
+		contentPane.add(preferencial);
 		
-		JLabel retirar_1 = new JLabel("");
-		retirar_1.addMouseListener(new MouseAdapter() {
+		JLabel comum = new JLabel("");
+		comum.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				String ficha = ifbank2.retirarFicha(2);
 				JOptionPane.showMessageDialog(null, ficha);
 			}
 		});
-		retirar_1.setIcon(new ImageIcon(Opcoes.class.getResource("/img/comum - bnt.png")));
-		retirar_1.setBounds(137, 438, 260, 64);
-		contentPane.add(retirar_1);
+		comum.setIcon(new ImageIcon(Opcoes.class.getResource("/img/comum - bnt.png")));
+		comum.setBounds(137, 438, 260, 64);
+		contentPane.add(comum);
 		
 		JLabel voltar = new JLabel("");
 		voltar.addMouseListener(new MouseAdapter() {
